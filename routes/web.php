@@ -32,6 +32,7 @@ Route::post('/editpost/{id}',[PostController::class,'update'])->name('post.edit'
 Route::get('/delete/{id}',[PostController::class,'destroy'])->name('post.delete');
 
 Route::get('/details/{comments}',[CommentsController::class,'details'])->name('post.details');
+
 Route::post('/detsils/{comments}',[CommentsController::class,'comments'])->name('post.comment');
 
 });
